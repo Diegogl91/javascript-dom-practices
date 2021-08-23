@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./example-3.css">
+</head>
+
+<body>
+
+    <form>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input class="form-control mb-3" type="email" id="username" name="username" placeholder="user@example.com">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input class="form-control mb-3" type="password" id="password" name="password" placeholder="*********">
+            <!-- pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" <small>Password (UpperCase, LowerCase and Number)</small> -->
+            <div id="validationServer03Feedback" class="invalid-feedback">
+                Password:
+                <ul>
+                    <li>Mayúscula</li>
+                    <li>Minúscula</li>
+                    <li>Numero</li>
+                    <li>6 a 8 Caracteres</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="./example-3.js"></script>
+</body>
+
+</html>
